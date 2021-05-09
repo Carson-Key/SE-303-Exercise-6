@@ -1,4 +1,4 @@
-class DarkModeButton
+class ButtonColor
     attr_reader :foreground_color, :color_code
 
     def initialize(foreground_color, color_code)
@@ -10,10 +10,10 @@ end
 def is_dark_mode(original_foreground_color, is_dark_mode)
     if is_dark_mode
         # darken foreground color for dark mode
-        new DarkModeButton(original_foreground_color - 10, '#111111')
+        new ButtonColor(original_foreground_color - 10, '#111111')
     else
         # lighten foreground color for non-dark mode
-        new DarkModeButton(original_foreground_color + 10, '#E0E0E0')
+        new ButtonColor(original_foreground_color + 10, '#E0E0E0')
     end
 end
 
