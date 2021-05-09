@@ -23,11 +23,5 @@ def draw_button(label_text, x, y, foreground_color, is_dark_mode)
 
     button_color = is_dark_mode(original_foreground_color, is_dark_mode)
 
-    if is_dark_mode
-        # darken foreground color for dark mode
-        paint(button_text, x, y, foreground_color - 10, '#111111')
-    else
-        # lighten foreground color for non-dark mode
-        paint(button_text, x, y, foreground_color + 10, '#E0E0E0')
-    end
+    paint(button_text, x, y, button_color.foreground_color, button_color.color_code)
 end
