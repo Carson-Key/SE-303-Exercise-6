@@ -10,10 +10,10 @@ end
 def is_dark_mode(button_text, original_foreground_color, is_dark_mode)
     if is_dark_mode
         # darken foreground color for dark mode
-        paint(button_text, x, y, original_foreground_color - 10, '#111111')
+        new DarkModeButton(original_foreground_color - 10, '#111111')
     else
         # lighten foreground color for non-dark mode
-        paint(button_text, x, y, original_foreground_color + 10, '#E0E0E0')
+        new DarkModeButton(original_foreground_color + 10, '#E0E0E0')
     end
 end
 
