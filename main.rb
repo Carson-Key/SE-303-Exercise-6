@@ -7,7 +7,7 @@ class DarkModeButton
      end
 end
 
-def is_dark_mode(button_text, original_foreground_color, is_dark_mode)
+def is_dark_mode(original_foreground_color, is_dark_mode)
     if is_dark_mode
         # darken foreground color for dark mode
         new DarkModeButton(original_foreground_color - 10, '#111111')
