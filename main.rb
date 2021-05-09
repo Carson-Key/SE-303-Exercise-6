@@ -10,6 +10,7 @@ end
 
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
     button_text = label_text
+    original_foreground_color = foreground_color
 
     if is_dark_mode
         # darken foreground color for dark mode
